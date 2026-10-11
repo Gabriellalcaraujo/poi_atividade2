@@ -1,0 +1,40 @@
+# Ambiente virtual Python
+.venv/
+venv/
+
+# Cache e artefatos do Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Logs das aplicações (ex.: nohup ... > cpu_app.log)
+*.log
+nohup.out
+
+# Arquivos de máquina virtual (nunca versionar)
+*.vdi
+*.vmdk
+*.vhd
+*.ova
+*.ovf
+*.iso
+VirtualBox VMs/
+
+# Binários baixados (ex.: k6 sem sudo)
+bin/
+k6
+k6-v*.tar.gz
+k6-v*.zip
+
+# Arquivos temporários da app IO-bound
+*.tmp
+
+# Sistema operacional e editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Segredos
+.env
