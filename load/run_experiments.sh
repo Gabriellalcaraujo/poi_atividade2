@@ -26,7 +26,7 @@ for R in $RATES; do
   fi
 
   k6 run -q -e URL="$URL" -e RATE="$R" -e DURATION="${DUR}s" \
-         -e OUT="$DIR/rate_$R.json" loadtest.js
+         -e OUT="$DIR/rate_$R.json" load-test.js
 
   if [ -n "$MON" ]; then
     wait "$MON"
