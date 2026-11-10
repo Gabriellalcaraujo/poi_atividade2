@@ -1,0 +1,23 @@
+services:
+  cpu-app:
+    image: anacramos/poi-cpu-app:1.0
+    ports:
+      - "8001:8001"
+    restart: unless-stopped
+
+  mem-app:
+    image: anacramos/poi-mem-app:1.0
+    ports:
+      - "8002:8002"
+    restart: unless-stopped
+
+  io-app:
+    image: anacramos/poi-io-app:1.0
+    ports:
+      - "8003:8003"
+    volumes:
+      - io-data:/data
+    restart: unless-stopped
+
+volumes:
+  io-data:
